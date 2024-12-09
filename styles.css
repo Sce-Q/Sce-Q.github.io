@@ -15,16 +15,14 @@
     overflow-y: auto;
 }
 
-/* Ensure all elements except the dark mode button are positioned normally */
 .sidebar .nav {
     margin-top: 20px;
     flex-grow: 1;
 }
 
-/* Move the dark mode button up */
 .sidebar #toggle-theme {
     position: absolute;
-    bottom: 90px; /* Adjust this value to move it up */
+    bottom: 90px;
     left: 20px;
     padding: 10px;
     font-size: 18px;
@@ -87,7 +85,7 @@
 
 /* Main Content: Respect Sidebar */
 .main-content {
-    margin-left: 290px; /* Prevent content from flowing behind sidebar */
+    margin-left: 290px;
     padding: 20px;
     min-height: 100vh;
     overflow: hidden;
@@ -95,7 +93,6 @@
     z-index: 1;
 }
 
-/* Contact Form Styling */
 form#contactForm {
     background-color: var(--background-color);
     padding: 20px;
@@ -150,7 +147,6 @@ form#contactForm button:hover {
     background-color: #45a049;
 }
 
-/* Contact Form Output Styling */
 #output {
     background-color: var(--background-color);
     padding: 20px;
@@ -172,7 +168,6 @@ form#contactForm button:hover {
     margin-bottom: 40px;
 }
 
-/* Videos, iframes, and images inside sections */
 .content-section video,
 .content-section iframe,
 .content-section img {
@@ -287,5 +282,5 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh; /* Full viewport height */
+    height: 20vh;
   }
