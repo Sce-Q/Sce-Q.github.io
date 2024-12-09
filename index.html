@@ -12,7 +12,7 @@
        
     <aside class="sidebar">
         <div class="profile">
-            <img src="Images/profile.jpg" alt="Profile Picture" class="profile-img">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
             <h1>Dainius Kairys</h1>
             <p>Antro kurso studentas, Vilniaus Tech universitete</p>
         </div>
@@ -50,6 +50,7 @@
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contanct</a></li>
             </ul>
         </div>
      
@@ -84,16 +85,17 @@
         <section id="portfolio" class="content-section">
             <h2>Atlikti darbai</h2>
             <img src="images/bun.png" alt="Portfolio Work">
+            <p>Išradau kvantini kompiuterį</p>
         </section>
 
         <section id="services" class="content-section">
             <h2>Paslaugos</h2>
             <video width="320" height="240" controls>
-                <source src="Videos/464571323_8712679262158534_8752235460131135140_n.mp4">
+                <source src="videos/464571323_8712679262158534_8752235460131135140_n.mp4">
             </video>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/F2YpXC1itEE?si=JvM087NHLpQl35AA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/i0M4ARe9v0Y?si=_bgYSpWsvawuMha4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <audio controls>
-                <source src="Audio/Metal pipe falling sound effect but its more violent.mp3">
+                <source src="audio/Metal pipe falling sound effect but its more violent.mp3">
             </audio>
 
             <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -133,7 +135,44 @@
                   <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
                 </svg>
               </div>
-              
+        </section>
+        <section id="contact" class="contact-section">
+            <form id="contactForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required><br>
+        
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+        
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required><br>
+        
+                <label for="address">Address:</label>
+                <input type="text" id="address" required><br>
+        
+                <!-- Questions -->
+                <label>How satisfied are you with our website design?</label>
+                <input type="number" id="question1" min="1" max="10" required><br>
+        
+                <label>How likely are you to recommend us to others?</label>
+                <input type="number" id="question2" min="1" max="10" required><br>
+        
+                <label>How satisfied are you with our customer service?</label>
+                <input type="number" id="question3" min="1" max="10" required><br>
+        
+                <label>How likely are you to return to our site?</label>
+                <input type="number" id="question4" min="1" max="10" required><br>
+        
+                <label>How well does our website meet your needs?</label>
+                <input type="number" id="question5" min="1" max="10" required><br>
+        
+                <button type="button" id="submitBtn">Submit</button>
+            </form>
+            <h2>Submitted Data:</h2>
+            <div id="output"></div>
         </section>
     
         <button id="scroll-to-top">&#8593</button>
